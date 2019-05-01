@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>15-安装插件</title>
+</head>
+<body>
+
+    <div id="app">
+        <button @click="getData">结合jq</button>
+    </div>
+
+    <script src="../js/vue.js"></script>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <script>
+        // 创建vue原型
+        Vue.prototype.$ = $;
+        // 创建vue实例
+        new Vue({
+            el: '#app',
+            methods: {
+                getData() {
+                    console.log(this.$)
+                    // 异步请求
+                    this.$.get(
+                        'http://www.baidu.com',
+                        function (data) {
+                            console.log(JSON.parse(data))
+                        }
+                    )
+                }
+            }
+        })
+    </script>
+
+</body>
+</html>

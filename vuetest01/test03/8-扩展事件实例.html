@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>8-扩展事件实例</title>
+</head>
+<body>
+
+    <div id="app">
+        <h2>{{ num }}</h2>
+        <input type="button" value="add" @click="add">
+    </div>
+    <input type="button" value="reduce" onclick="reduce()"> <br>
+    <input type="button" value="reduceOne" onclick="reduceOne()"> <br>
+    <input type="button" value="off" onclick="off()"> <br>
+
+    <script src="../js/vue.js"></script>
+    <script>
+
+        // 创建vue实例
+        let vm = new Vue({
+            el: '#app',
+            data: {
+                num: 0
+            },
+            methods: {
+                add() {
+                    this.num++
+                }
+            }
+        })
+        // 事件绑定
+        vm.$on('reduce', function () {
+            this.num--
+        })
+        vm.$once('reduceOne', function () {
+            this.num--
+        })
+
+        function off() {
+            vm.$off('reduce')
+        }
+        function reduce() {
+            vm.$emit('reduce')
+        }
+        function reduceOne() {
+            vm.$emit('reduceOne')
+        }
+    </script>
+
+</body>
+</html>

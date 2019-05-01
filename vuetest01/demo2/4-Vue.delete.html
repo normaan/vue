@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TZ-追梦</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+    </style>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <!--
+        Vue.nextTick
+    -->
+    <div id="app">
+        <ol>
+            <li v-for="item in arr">{{item}}</li>
+        </ol>
+    </div>
+    <button onclick="add()"> 点击删除arr的数据 </button>
+    <script>
+        let app = new Vue({
+            el:'#app',
+            data(){
+                return {
+                    arr:['a','b','c']
+                }
+            }
+        })
+        function add() {
+            console.log( app.arr )
+            //app.arr[2] = 123
+            Vue.delete( app.arr ,2);
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TZ-追梦</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <!--把数据插入到app作用域下，需要 用 插值符号 {{ 变量 }}  ${变量}-->
+        <h2 v-text="msg"></h2>
+        <hr>
+        <ol>
+            <li v-for="item in arr">{{item}}</li>
+        </ol>
+        <hr>
+        <ol>
+            <li v-for="item in sortArr">{{item}}</li>
+        </ol>
+        <hr>
+        <ol>
+            <li v-for="(item,index) in arr" :key="index">{{item}}</li>
+        </ol>
+        <hr>
+        <ol>
+            <li v-for="(item,index) in users" :key="index">name:{{item.name}} age:{{item.age}}</li>
+        </ol>
+        <hr>
+        <ol>
+            <li v-for="(value,key,index) in userName" :key="index">
+                value: {{value}},
+                key: {{key}},
+                index: {{index}}
+            </li>
+        </ol>
+    </div>
+
+    <script src="../js/vue.js"></script>
+    <script>
+
+        // MVVM
+        new Vue({
+            el:'#app',
+            data:{
+                msg:'v-for',
+                arr:[123,456,789],
+                users:[
+                    {name:'追梦',age:18},
+                    {name:'阿飞',age:20},
+                    {name:'乌拉',age:22}
+                ],
+                userName:{
+                    name:'追梦',
+                    age:18,
+                    sex:'男'
+                }
+            },
+            computed:{
+                sortArr:function () {
+                    return this.arr.sort(function (a,b) {
+                        //return a-b; // 小到大
+                        return b-a; // 大到小
+                    })
+                }
+            }
+        });
+    </script>
+</body>
+</html>

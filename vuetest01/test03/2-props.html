@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2-props</title>
+</head>
+<body>
+
+    <div id="app">
+        <hd-nav :alt="msg" title="商品列表" main-title="主标题"></hd-nav>   <!--父组件-->
+    </div>
+
+    <script src="../js/vue.js"></script>
+    <script>
+        let child = {
+            template: `<em>child子组件</em>`
+        }
+
+        let parent = {
+            template: `
+                <h2>选项组件 - {{ title }}
+                    <child></child>
+                </h2>
+            `,
+            props: {
+                title: {
+                    type: String,
+                    default: '',
+                    required: true,
+                    validator: function (value) {
+                        return value
+                    }
+                }
+            },
+            components: {
+                // child: child
+                child
+            }
+        }
+
+        new Vue({
+            el: '#app',
+            data() {
+                return {
+                    msg: 'seo'
+                }
+            },
+            components: {
+                hdNav: parent
+            }
+        })
+    </script>
+
+</body>
+</html>

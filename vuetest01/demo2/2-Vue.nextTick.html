@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TZ-追梦</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+    </style>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <!--
+        Vue.nextTick
+    -->
+    <div id="app">
+        {{msg}}
+    </div>
+    <script>
+        let app = new Vue({
+            el:'#app',
+            data(){
+                return {
+                    msg:'hello'
+                }
+            }
+        })
+        app.msg = '你好';
+        Vue.nextTick(function () {
+            console.log('DOM更新了')
+        });
+        Vue.nextTick().then(()=>{
+            console.log('DOM更新了')
+        })
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+

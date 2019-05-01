@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TZ-追梦</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+    </style>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <div id="app"></div>
+    <template id="tpl">
+        <h2 style="color: hotpink">
+            template标签模板
+        </h2>
+    </template>
+    <script>
+
+        new Vue({
+            el:'#app',
+            template:'#tpl'
+        })
+    </script>
+</body>
+</html>

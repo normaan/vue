@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TZ-追梦</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+    </style>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h2>{{msg}}</h2>
+        <!--根据值的不同 ，显示不同的组件-->
+        <component v-bind:is="componentA"></component>
+        <component :is="componentB"></component>
+        <component :is="componentC"></component>
+        <hr>
+        <component v-bind:is="toggleComponent"></component>
+        <button @click="toggle"> 切换component组件 </button>
+    </div>
+
+    <script>
+        // 在外部声明组件
+        let componentA = {
+            template:`<h2 style="color: orangered">组件A</h2>`
+        }
+        let componentB = {
+            template:`<h2 style="color: yellowgreen">组件B</h2>`
+        }
+        let componentC = {
+            template:`<h2 style="color: skyblue">组件C</h2>`
+        }
+        new Vue({
+            el:'#app',
+            data:{
+                msg:'component标签',
+                componentA:componentA,
+                componentB,
+                componentC,
+                toggleComponent:componentA,
+                arr:[
+                    componentA,
+                    componentB,
+                    componentC,
+                ]
+            },
+            components:{
+                componentA:componentA,
+                componentB,
+                componentC
+            },
+            methods:{
+                toggle(){
+                    this.toggleComponent =this.arr[Math.floor(Math.random()*3)]
+                }
+            }
+        })
+    </script>
+</body>
+</html>

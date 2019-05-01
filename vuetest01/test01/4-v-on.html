@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>4-v-on</title>
+</head>
+<body>
+    <div id="app">
+        <h1> 得分：{{num}} </h1>
+        <button v-on:click="addition">加分</button>
+        <button v-on:click="subtraction">减分</button>
+        <button @click="addition">加分@click</button>
+        <!--键盘事件,双向数据绑定-->
+        <label>
+            <input v-model="num" v-on:keyup.enter="onEnter" value="键盘事件">
+        </label>
+        <label>
+            <input v-on:keyup.13="onEnter" value="键盘事件">
+        </label>
+    </div>
+
+    <script src="../js/vue.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            // ES5写法
+            /*data: {
+
+            },
+            methods: {
+                add: function () {
+
+                }
+            }*/
+            // ES6写法
+            data() {
+                return {
+                    num: 0
+                }
+            },
+            methods: {
+                addition(){
+                    this.num++
+                },
+                subtraction(){
+                    this.num--
+                },
+                onEnter(){
+                    this.num++
+                }
+            }
+        })
+    </script>
+</body>
+</html>

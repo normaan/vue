@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TZ-追梦</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <!--把数据插入到app作用域下，需要 用 插值符号 {{ 变量 }}  ${变量}-->
+        <h2 v-text="msg"></h2>
+        <hr>
+        <div v-if="isLogin">请输入你的用户名 </div>
+        <div v-else="isLogin"> 请登录 </div>
+    </div>
+
+    <script src="../js/vue.js"></script>
+    <script>
+
+        // MVVM
+        new Vue({
+            el:'#app',
+            data:{  // 我们请求过来的原始数据 都会放到 data，
+                msg:'v-if 移入移出 移动出没有dom节点，不存在页面上面',
+                isLogin:false
+            }
+        });
+    </script>
+</body>
+</html>

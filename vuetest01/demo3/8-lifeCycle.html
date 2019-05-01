@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TZ-追梦</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+    </style>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        {{msg}}
+        <br>
+        <em>{{num}}</em><br>
+        <button @click="add">add</button>
+    </div>
+    <script>
+        let vm = new Vue({
+            el:'#app',
+            data(){
+                return {
+                    msg:'生命周期 钩子函数 事件函数 例如，Dom加载之前，DOM加载完成后，数据更新后，操作。。。',
+                    num:0
+                }
+            },
+            methods:{
+                add(){
+                    this.num++
+                }
+            },
+            beforeCreate(){
+                console.log('1.beforeCreate')
+            },
+            created(){
+                console.log('2.created')
+            },
+            beforeMount(){
+                console.log('3.beforeMount')
+            },
+            mounted(){
+                console.log('4.mounted')
+            },
+            beforeUpdate(){
+                console.log('5.beforeUpdate')
+            },
+            updated(){
+                console.log('6.updated')
+            },
+            activated(){
+                console.log('7.activated')
+            },
+            deactivated(){
+                console.log('8.deactivated')
+            },
+            beforeDestroy(){
+                console.log('9.beforeDestroy')
+            },
+            destroyed(){
+                console.log('10.destroyed')
+            },
+            errorCaptured(){
+                console.log('11.errorCaptured')
+            },
+        });
+    </script>
+</body>
+</html>

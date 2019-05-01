@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5-v-bind</title>
+    <style>
+        .red{
+            background-color: hotpink;
+        }
+        .blue{
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="app">
+        <p v-bind:class="r">返回r的值</p>
+        <p :class="{blue: isBlue}">接收判断条件</p>
+
+        <p :class="{r, red}">绑定对象</p>
+        <p :class="[r, b]">绑定数组</p>
+
+        <p :class="isTrue ? 'red' : 'blue'">三元</p>
+        <p :style="styleObj">绑定对象2</p>
+        <p :style="{color:color,border:border}"> 绑定对象 </p>
+    </div>
+
+    <script src="../js/vue.js"></script>
+    <script>
+        new Vue({
+            el:'#app',
+            // ES5写法
+            /*data: {
+
+            },
+            methods: {
+                add: function () {
+
+                }
+            }*/
+            // ES6写法
+            data(){
+                return {
+                    r: 'red',
+                    isBlue: true,
+                    red: true,
+                    b: 'blue',
+                    isTrue: true,
+                    styleObj: {
+                        color:'red',
+                        border:'1px solid green'
+                    },
+                    color:'red',
+                    border:'1px solid green'
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>

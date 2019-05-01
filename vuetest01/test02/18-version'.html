@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>18-version'</title>
+</head>
+<body>
+
+    <div id="app">
+        <div>{{ msg }} - ${ msg }</div>
+    </div>
+
+    <script src="../js/vue.js"></script>
+    <script>
+        // Vue版本号
+        let version = Number(Vue.version.split('.')[0])
+
+        if( version === 2 ){
+            console.log('Vue.JS 是2.x版本')
+        }else if( version === 1 ){
+            console.log('你使用的版本过低')
+        }else {
+            console.log('使用的版本有问题，请联系开发者')
+        }
+
+        // 创建vue实例
+        new Vue({
+            el: '#app',
+            data: {
+                msg: 1
+            },
+            // 自定义差值符号
+            delimiters: ['${','}']
+        })
+    </script>
+
+</body>
+</html>

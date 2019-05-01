@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3-watch</title>
+</head>
+<body>
+
+    <div id="app">
+        {{ temperature }} - {{ font }} <br>
+        <input type="button" value="add" @click="add">
+        <input type="button" value="reduce" @click="reduce">
+    </div>
+
+    <script src="../js/vue.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                temperature: 20,
+                font: ''
+            },
+            methods: {
+                add() {
+                    this.temperature++
+                },
+                reduce() {
+                    this.temperature--
+                }
+            },
+            watch: {
+                temperature(newVal, oldVal) {
+                    if (newVal >= 25) {
+                        this.font = '多游泳'
+                    } else if (oldVal <= 15) {
+                        this.font = '多穿点衣服'
+                    }
+                }
+            }
+        })
+    </script>
+
+</body>
+</html>

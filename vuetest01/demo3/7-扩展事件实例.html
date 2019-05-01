@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TZ-追梦</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+    </style>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+
+    <div id="app">
+        <h2>{{msg}} - {{num}}</h2>
+        <input type="button" value="add" @click="add">
+    </div>
+    <hr>
+    <input type="button" value="reduce" onclick="reduce()"> <br>
+    <input type="button" value="reduceOne" onclick="reduceOne()"> <br>
+    <input type="button" value="off" onclick="off()"> <br>
+<script>
+
+    let vm = new Vue({
+        el:'#app',
+        data:{
+            msg:'实例方法 / 事件',
+            num:0
+        },
+        methods:{
+            add(){
+                this.num ++
+            }
+        }
+    })
+    // 事件监听
+    vm.$on('reduce',function () {
+        this.num --
+    })
+    vm.$once('reduceOne',function () {
+        this.num --
+    })
+
+    function off() {
+        vm.$off('reduce');
+    }
+    function reduceOne() {
+        vm.$emit('reduceOne')
+    }
+    // 发送信息
+    function reduce() {
+        vm.$emit('reduce')
+    }
+</script>
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TZ-追梦</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+    </style>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <!--
+        Vue.directive 自定义指令
+    -->
+    <div id="app">
+        <h1>{{msg}}</h1>
+        <h2 v-dream="custom">{{msg}}  - {{num}}</h2>
+        <h2 v-coutom="info">{{msg}} - {{num}}</h2>
+        <button @click="add"> 点击改变num </button>
+    </div>
+    <button onclick="ubbind()">解绑</button>
+    <script>
+        function ubbind() {
+            app.$destroy();
+        }
+
+        Vue.directive('dream',function (el,bind) {
+            console.log( el );
+            el.style = 'color:' + bind.value
+            console.log(bind)
+        });
+
+        Vue.directive('coutom',{
+            // 事件函数 -> 钩子
+            bind: function () {
+                console.log('1. 被绑定')
+            },
+            inserted: function (el,bind) {
+                console.log('2. 绑定到节点')
+                el.style.color = bind.value
+            },
+            update: function () {
+                console.log('3. 组件更新')
+            },
+            componentUpdated: function () {
+                console.log('4.组件更新完成 ')
+            },
+            unbind: function () {
+                console.log('5.解绑')
+            }
+        })
+        let app = new Vue({
+            el:'#app',
+            data:{
+                msg:'Vue.directive',
+                custom:'hotpink',
+                info:'blue',
+                num:0
+            },
+            methods:{
+                add(){
+                    this.num ++
+                }
+            }
+
+        })
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+

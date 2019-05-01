@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>11-script标签模板</title>
+</head>
+<body>
+
+    <div id="app"></div>
+
+    <!--script标签模板-->
+    <script type="text/x-template" id="tpl">
+        <h2 style="color: hotpink">
+            script标签模板
+        </h2>
+    </script>
+
+    <script src="../js/vue.js"></script>
+    <script>
+        // 创建vue实例
+        new Vue({
+            el: '#app',
+            template: '#tpl'
+        })
+    </script>
+
+</body>
+</html>

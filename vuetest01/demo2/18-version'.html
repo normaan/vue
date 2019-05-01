@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TZ-追梦</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+    </style>
+    <script src="../js/vue.js"></script>
+
+</head>
+<body>
+
+    <div id="app">
+        <h2> {{msg}}  - ${msg} </h2>
+    </div>
+    <script>
+        console.log( Number(Vue.version.split('.')[0]) )
+        let version = Number(Vue.version.split('.')[0]);
+        if( version === 2 ){
+            console.log('Vue.JS 是2.x版本')
+        }else if( version === 1 ){
+            console.log('你使用的版本过低')
+        }else {
+            console.log('使用的版本有问题，请联系开发者')
+        }
+        // ${es6的变量}
+        new Vue({
+            el:'#app',
+            data:{
+                msg:'version'
+            },
+            delimiters:['${','}'] // 重新定义插值符号
+        })
+    </script>
+</body>
+</html>

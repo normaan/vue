@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1-Vue.extend</title>
+</head>
+<body>
+
+    <div id="app"></div>
+    <abc></abc>
+
+    <script src="../js/vue.js"></script>
+    <script>
+        let extend = Vue.extend({
+            template: `<h2><a :href="url">{{con}}</a></h2>`,
+            data() {
+                return {
+                    con: 'extend',
+                    url: 'http://baidu.com'
+                }
+            }
+        })
+        // 挂载
+        new extend().$mount('#app')
+        new extend().$mount('abc')
+    </script>
+
+</body>
+</html>

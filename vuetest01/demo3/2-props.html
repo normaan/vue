@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TZ-追梦</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+    </style>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <hd-nav :alt="msg" title="商品列表" main-title="主标题"></hd-nav>   <!--父组件-->
+    </div>
+
+    <script>
+        let child = {
+            template:`<em> child子组件 </em>`
+        }
+
+        let parent = {
+            template:`
+                    <h2>选项组件 - {{title}}
+                        <child></child>
+                    </h2>
+                `,
+            props:{
+                title:{
+                    type:String,
+                    default:'',
+                    required:true,
+                    validator:function (value) {
+                        return value;
+                    }
+                }
+            },
+            components:{
+                child:child
+            }
+        }
+
+        new Vue({
+            el:'#app',
+            data:{
+                msg:'seo123'
+            },
+            components:{
+                hdNav:parent
+            }
+        })
+    </script>
+</body>
+</html>

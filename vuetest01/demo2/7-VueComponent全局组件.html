@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TZ-追梦</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+    </style>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <hd-nav></hd-nav>   <!--小写-->
+    </div>
+    <script>
+        // 组件就像公式样式，可以在任何vue作用域下复用
+        // 全局组件
+        Vue.component(
+            'hdNav',    // 驼峰命名
+            {
+                template:`<h2 style="color: skyblue">全局组件</h2>`
+            }
+        )
+        new Vue({
+            el:'#app'
+        })
+    </script>
+</body>
+</html>

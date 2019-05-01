@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3-v-for</title>
+</head>
+<body>
+
+    <div id="app">
+        <!--遍历数组-->
+        <ol>
+            <li v-for="(item, index) in arr" :key="index">{{ item }}</li>
+        </ol>
+        <!--遍历排序后的数组-->
+        <ol>
+            <li v-for="(item, index) in sortArr" :key="index">{{ item }}</li>
+        </ol>
+        <!--遍历对象数组-->
+        <ol>
+            <li v-for="(item, index) in users" :key="index">
+                {{ item.name }} - {{ item.age }}
+            </li>
+        </ol>
+        <!--遍历对象-->
+        <ol>
+            <li v-for="(value, key, index) in userName" :key="index">
+                value: {{ value }},
+                key: {{ key }},
+                index: {{ index }}
+            </li>
+        </ol>
+    </div>
+
+    <script src="../js/vue.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            // ES5写法
+            /*data: {
+
+            },
+            methods: {
+                add: function () {
+
+                }
+            }*/
+            // ES6写法
+            data() {
+                return {
+                    // 数组
+                    arr:[123,456,789],
+                    // 对象数组
+                    users:[
+                        {name:'追梦',age:18},
+                        {name:'阿飞',age:20},
+                        {name:'乌拉',age:22}
+                    ],
+                    // 对象
+                    userName:{
+                        name:'追梦',
+                        age:18,
+                        sex:'男'
+                    }
+                }
+            },
+            // 计算属性
+            computed: {
+                // ES5写法
+                /*sortArr: function () {
+                    return this.arr.sort(function (a, b) {
+                        return b - a
+                    })
+                }*/
+                // ES6写法
+                sortArr(){
+                    return this.arr.sort((a, b) => {
+                        return b - a
+                    })
+                }
+            }
+        })
+    </script>
+
+</body>
+</html>

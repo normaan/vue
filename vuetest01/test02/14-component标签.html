@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>14-component标签</title>
+</head>
+<body>
+
+    <div id="app">
+        <!--根据值的不同 ，显示不同的组件-->
+        <component v-bind:is="componentA"></component>
+        <component :is="componentB"></component>
+        <component :is="componentC"></component>
+        <hr>
+
+        <component v-bind:is="toggleComponent"></component>
+        <button @click="toggle">切换component组件</button>
+    </div>
+
+    <script src="../js/vue.js"></script>
+    <script>
+        // 在外部声明组件
+        let componentA = {
+            template: `<h2 style="color: orangered">组件A</h2>`
+        }
+        let componentB = {
+            template: `<h2 style="color: yellowgreen">组件B</h2>`
+        }
+        let componentC = {
+            template: `<h2 style="color: skyblue">组件C</h2>`
+        }
+
+        // Vue实例
+        new Vue({
+            el: '#app',
+            data: {
+                componentA: componentA,
+                componentB,
+                componentC,
+
+                toggleComponent: componentA,
+                arr: [
+                    componentA,
+                    componentB,
+                    componentC,
+                ]
+            },
+            components: {
+                componentA: componentA,
+                componentB,
+                componentC
+            },
+            methods: {
+                toggle() {
+                    // 随机获取组件
+                    this.toggleComponent = this.arr[Math.floor(Math.random() * 3)]
+                }
+            }
+        })
+    </script>
+
+</body>
+</html>

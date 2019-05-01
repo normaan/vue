@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>13-父组件引用子组件</title>
+</head>
+<body>
+
+    <div id="app">
+        <hd-nav :alt="msg" title="商品列表" main-title="主标题"></hd-nav>
+    </div>
+
+    <script src="../js/vue.js"></script>
+    <script>
+        // 子组件
+        let childs = {
+            template: '<em>child子组件</em>'
+        }
+
+        // 父组件
+        let parent = {
+            template:
+            `<h2>选项组件 - {{title}} - {{mainTitle}} - {{alt}}
+                <child></child>
+            </h2>`,
+            props: ['title', 'mainTitle', 'alt'],
+            components: {
+                child: childs
+            }
+        }
+
+
+        // 创建vue实例
+        new Vue({
+            el: '#app',
+            data: {
+                msg: 'seo优化'
+            },
+            components: {
+                hdNav: parent
+            }
+        })
+    </script>
+
+</body>
+</html>

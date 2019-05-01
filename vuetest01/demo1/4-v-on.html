@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TZ-追梦</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <!--把数据插入到app作用域下，需要 用 插值符号 {{ 变量 }}  ${变量}-->
+        <h2 v-text="msg"></h2>
+        <hr>
+        <h1> 得分：{{num}} </h1>
+        <button v-on:click="addition">加分</button>
+        <button v-on:click="subtraction">减分</button>
+        <hr>
+        <button @click="addition">加分</button>
+        <hr>
+        页面的数据的改变，会影响到内存的变化 ，内存的改变同时会改变 页面 <br>
+        双向数据绑定： <em v-text="num"></em>
+        <input v-model="num" v-on:keyup.enter="onEnter" value="键盘事件">
+        <input v-on:keyup.13="onEnter" value="键盘事件">
+    </div>
+
+    <script src="../js/vue.js"></script>
+    <script>
+
+        // MVVM
+        new Vue({
+            el:'#app',
+            data:{
+                msg:'v-on',
+                num:0
+            },
+            methods:{
+                addition:function (e) {
+                    //console.log( e, this )
+                    this.num ++;
+                },
+                subtraction(){
+                    this.num --;
+                },
+                onEnter(){
+                    this.num ++;
+                }
+            }
+        });
+    </script>
+</body>
+</html>

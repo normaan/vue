@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TZ-追梦</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+    </style>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+
+    <div id="app">
+        <h2>{{msg}}</h2>
+        <em>{{price}}</em>
+        <input type="button" value="在Vue作用域下调用add函数" @click="add(5,$event)"> <br>
+        <input type="button" value="this指向" @click="This">
+        <dream @click.native="add" title="在组件中调用方法"></dream>
+    </div>
+    <button onclick="vm.add(5,this)">在外部调用vue的里的方法</button>
+<script>
+    console.log(this)
+    let dream = {
+        template:'<h2><button>{{title}}</button></h2>',
+        props:['title']
+    }
+    let vm = new Vue({
+        el:'#app',
+        data:{
+            price:199,
+            msg:'methods',
+        },
+        components:{
+            dream
+        },
+        methods:{
+            add(n,e){
+                //console.log(this) Vue实例
+                //this.price++
+                //this.price += n;
+                console.log(n,e);
+            },
+            This:()=>{
+                console.log(this)
+            }
+        }
+    })
+</script>
+</body>
+</html>
+
+
+
+
+
+
+

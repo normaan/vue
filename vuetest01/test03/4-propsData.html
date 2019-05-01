@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4-propsData</title>
+</head>
+<body>
+
+    <!--
+        Vue.extend 就是用来生成组件
+        学vue，就是在不停地使用组件
+    -->
+    <abc></abc>
+    <div id="box"></div>
+
+    <script src="../js/vue.js"></script>
+    <script>
+        // 子类构造器
+        let extend = Vue.extend({
+            template: `<a :href="url">{{ con }} - {{ msg }}</a>`,
+            data() {
+                return {
+                    con: 'extend',
+                    url: 'http://baidu.com'
+                }
+            },
+            props: ['msg']
+        });
+        // 实例化
+        new extend({
+            propsData: {
+                msg: 1
+            }
+        }).$mount('abc'); // 挂载至元素
+        // 实例化
+        new extend({
+            propsData: {
+                msg: 2
+            }
+        }).$mount('#box'); // 挂载至元素
+    </script>
+
+</body>
+</html>

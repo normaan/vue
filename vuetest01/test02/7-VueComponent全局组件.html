@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>7-VueComponent全局组件</title>
+</head>
+<body>
+    <div id="app">
+        <!--写法一-->
+        <hd-nav></hd-nav>
+        <!--写法二-->
+        <hd-nav />
+    </div>
+
+    <script src="../js/vue.js"></script>
+    <script>
+        // 组件就像公式样式，可以在任何vue作用域下复用
+        // 全局组件component
+        Vue.component(
+            'hdNav',
+            {
+                template: '<h2 style="color: skyblue">全局组件</h2>'
+            }
+        )
+        // 创建vue实例
+        new Vue({
+            el: '#app'
+        })
+    </script>
+</body>
+</html>

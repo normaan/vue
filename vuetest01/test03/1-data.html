@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1-data</title>
+</head>
+<body>
+
+    <div id="app">
+        <h2>{{ num }}</h2>
+        <input type="button" @click="add" value="add">
+    </div>
+    <button onclick="addNum()">addNum</button>
+
+    <script src="../js/vue.js"></script>
+    <script>
+        let vm = new Vue({
+            el: '#app',
+            // es5
+            /*data: {
+                num: 123
+            }*/
+            // es6
+            data() {
+                return {
+                    num: 1
+                }
+            },
+            methods: {
+                add() {
+                    this.num++
+                }
+            }
+        });
+
+        // 调用$data属性
+        console.log(vm.$data.num)
+
+        // 原生js
+        function addNum() {
+            vm.num++
+        }
+    </script>
+
+</body>
+</html>

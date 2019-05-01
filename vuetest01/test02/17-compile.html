@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>17-compile</title>
+</head>
+<body>
+
+    <div id="app">
+        <h2>{{ msg }} - {{ num }}</h2>
+    </div>
+
+    <script src="../js/vue.js"></script>
+    <script>
+        // 编译模板
+        let res = Vue.compile('<h2>{{num}}</h2>')
+
+        // 创建vue实例
+        new Vue({
+            el: '#app',
+            data: {
+                msg: 1,
+                num: 0
+            },
+            render: res.render
+        })
+    </script>
+
+</body>
+</html>

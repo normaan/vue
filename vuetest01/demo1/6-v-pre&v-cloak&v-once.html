@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TZ-追梦</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+        .red{
+            background-color: red;
+        }
+        .blue{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="app">
+        <!--把数据插入到app作用域下，需要 用 插值符号 {{ 变量 }}  ${变量}-->
+        <h2 v-text="msg"></h2>
+        <hr>
+        <div v-pre="msg"> {{msg}}</div>
+        <div v-cloak> 不会显示，直到编译结束。 </div>
+        <hr>
+        <h2 v-once> {{msg}} </h2> <br>
+        <input type="text" v-model="msg"> <br>
+        <em>{{msg}}</em>
+    </div>
+
+    <script src="../js/vue.js"></script>
+    <script>
+
+        new Vue({
+            el:'#app',
+            data:{
+                msg:'6-v-pre&v-cloak&v-once',
+            }
+        });
+    </script>
+</body>
+</html>,

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2-v-if</title>
+</head>
+<body>
+
+    <div id="app">
+        <div v-if="onOff" v-text="text1"></div>
+        <div v-if="isLogin" v-html="html1"></div>
+    </div>
+
+    <script src="../js/vue.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            // ES5写法
+            /*data: {
+
+            },
+            methods: {
+                add: function () {
+
+                }
+            }*/
+            // ES6写法
+            data() {
+                return {
+                    text1: '666',
+                    html1: '<em style="color: skyblue;">aaa</em>',
+                    onOff: false,
+                    isLogin: true
+                }
+            }
+        })
+    </script>
+
+</body>
+</html>

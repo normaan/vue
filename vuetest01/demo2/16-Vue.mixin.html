@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TZ-追梦</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+    </style>
+    <script src="../js/vue.js"></script>
+
+</head>
+<body>
+
+    <div id="app">
+        <h2> {{msg}} - {{ num }}</h2>
+        <input type="button" v-on:click="add" value="add">
+    </div>
+    <script>
+        let addLog = {
+            updated(){
+                console.log('选项的混入')
+            }
+        }
+        Vue.mixin({
+            updated(){
+                console.log('全局的混入')
+            }
+        })
+        new Vue({
+            el:'#app',
+            data:{
+                msg:'Vue.mixin',
+            },
+            methods:{
+                add(){
+                    this.num++
+                }
+            },
+        })
+    </script>
+</body>
+</html>

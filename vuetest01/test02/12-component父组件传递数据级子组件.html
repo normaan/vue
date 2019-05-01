@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>12-component父组件传递数据级子组件</title>
+</head>
+<body>
+
+    <div id="app">
+        <hd-nav :alt="msg" title="商品列表" main-title="主标题"></hd-nav>
+    </div>
+
+    <script src="../js/vue.js"></script>
+    <script>
+        // 创建vue实例
+        new Vue({
+            el: '#app',
+            data: {
+                msg: 'seo优化'
+            },
+            components: {
+                hdNav: {
+                    // 子组件
+                    template: '<h2>选项组件 - {{alt}} - {{title}} - {{mainTitle}}</h2>',
+                    // props 用于接收父组件的数据
+                    props: ['alt', 'title', 'mainTitle']
+                }
+            }
+        })
+    </script>
+
+</body>
+</html>

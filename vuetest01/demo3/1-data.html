@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TZ-追梦</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+    </style>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        {{num}}
+        <br>
+        <input type="button" @click="add" value="add">
+    </div>
+    <button onclick="newAdd()">newAdd</button>
+    <script>
+        let vm = new Vue({
+            el:'#app',
+            /*data:{
+                num:123
+            }*/
+            data(){
+                return {
+                    num:123
+                }
+            },
+            methods:{
+                add(){
+                    this.num++;
+                }
+            }
+        });
+        console.log(vm.$data.num)
+        
+        function newAdd() {
+            vm.num++
+        }
+    </script>
+</body>
+</html>

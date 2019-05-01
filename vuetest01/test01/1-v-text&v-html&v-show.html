@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1-v-text&v-html&v-show</title>
+</head>
+<body>
+
+    <div id="app">
+        <!--点击事件-->
+        <button @click="add">{{ msg }}</button>
+        <h2 v-text="text1"></h2>
+        <h2 v-html="html1"></h2>
+        <h2 v-show="onOff">{{ msg }}</h2>
+    </div>
+
+    <script src="../js/vue.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            // ES5写法
+            /*data: {
+
+            },
+            methods: {
+                add: function () {
+
+                }
+            }*/
+
+            // ES6写法
+            data(){
+                return{
+                    msg: 123,
+                    text1: '666',
+                    html1: '<em style="color: skyblue;">aaa</em>',
+                    onOff: true
+                }
+            },
+            methods:{
+                add(){
+                    console.log(666)
+                }
+            }
+        })
+    </script>
+
+</body>
+</html>

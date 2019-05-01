@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4-Vue.delete</title>
+</head>
+<body>
+    <!--
+        Vue.directive 自定义指令
+    -->
+    <div id="app">
+        <h2 v-ljr="costom">{{ msg }} - {{ num }}</h2>
+        <h2 v-coutom="info">{{ msg }} - {{ num }}</h2>
+        <button @click="add">点击改变num</button>
+    </div>
+    <button onclick="ubbind()">解绑</button>
+
+    <script src="../js/vue.js"></script>
+    <script>
+        function ubbind(){
+            vm.$destroy()
+        }
+
+        Vue.directive('ljr', (el, bind) => {
+            console.log(el)
+            console.log(bind)
+            el.style = 'color:' + bind.value
+        })
+
+        Vue.directive('coutom', {
+            // 事件函数 -> 钩子
+            bind: function () {
+                console.log('1.被绑定')
+            },
+            inserted: function (el, bind) {
+                console.log('2.绑定到节点')
+                el.style.color = bind.value
+            },
+            update: function () {
+                console.log('3.组件更新')
+            },
+            componentUpdated: function () {
+                console.log('4.组件更新完成')
+            },
+            unbind: function () {
+                console.log('5.解绑')
+            }
+        })
+
+        let vm = new Vue({
+            el: '#app',
+            data() {
+                return {
+                    msg: 'Vue.directive',
+                    costom: 'hotpink',
+                    info: 'skyblue',
+                    num: 0
+                }
+            },
+            methods: {
+                add(){
+                    this.num++
+                }
+            }
+        })
+    </script>
+
+</body>
+</html>

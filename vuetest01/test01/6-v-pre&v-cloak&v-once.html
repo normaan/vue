@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>6-v-pre&v-cloak&v-once</title>
+</head>
+<body>
+
+    <div id="app">
+        <div v-pre="msg"> {{msg}}</div>
+        <div v-cloak> 不会显示，直到编译结束。 </div>
+        <h2 v-once> {{msg}} </h2> <br>
+        <label>
+            <input type="text" v-model="msg">
+        </label>
+    </div>
+
+    <script src="../js/vue.js"></script>
+    <script>
+
+        new Vue({
+            el:'#app',
+            // ES5写法
+            /*data: {
+
+            },
+            methods: {
+                add: function () {
+
+                }
+            }*/
+            // ES6写法
+            data() {
+                return {
+                    msg: 123
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TZ-追梦</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+    </style>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <!--
+        Vue.directive 自定义指令
+    -->
+    <div id="app">
+        <h1>{{msg}}</h1>
+        <h2>{{ text | myFilter }}</h2>
+        <input type="text" v-model="text">
+    </div>
+    <script>
+        // 在选项中使用
+        /*let app = new Vue({
+            el:'#app',
+            data:{
+                msg:'Vue.filter 过滤器',
+                text:''
+            },
+            filters:{
+                myFilter:function (value) {
+                    return value.split('').reverse().join('');
+                }
+            }
+        })*/
+        new Vue({
+            el: '#app',
+            data: {
+                msg: 'Vue.filter 过滤器',
+                text: ''
+            }
+        })
+
+        // 在全局设置  Vue 构造器
+        Vue.filter('myFilter',function (value) {
+            return '￥'+value+'元';
+        })
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+

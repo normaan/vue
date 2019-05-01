@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>9-lifeCycle</title>
+</head>
+<body>
+
+    <div id="app">
+        <h2>{{ num }}</h2>
+        <button @click="add">add</button>
+    </div>
+
+    <script src="../js/vue.js"></script>
+    <script>
+
+        // 创建vue实例
+        new Vue({
+            el: '#app',
+            data: {
+                num: 0
+            },
+            methods: {
+                add() {
+                    this.num++
+                }
+            },
+            beforeCreate(){
+                console.log('1.beforeCreate')
+            },
+            created(){
+                console.log('2.created')
+            },
+            beforeMount(){
+                console.log('3.beforeMount')
+            },
+            mounted(){
+                console.log('4.mounted')
+            },
+            beforeUpdate(){
+                console.log('5.beforeUpdate')
+            },
+            updated(){
+                console.log('6.updated')
+            },
+            activated(){
+                console.log('7.activated')
+            },
+            deactivated(){
+                console.log('8.deactivated')
+            },
+            beforeDestroy(){
+                console.log('9.beforeDestroy')
+            },
+            destroyed(){
+                console.log('10.destroyed')
+            },
+            errorCaptured(){
+                console.log('11.errorCaptured')
+            },
+        })
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="65febc95-cd99-4048-a032-6862e341b863" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jdm/src/components/category/Category.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jdm/src/router/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="53" column="30" lean-forward="true" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jdm/src/components/category/content/cateId_1.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="64" column="18" lean-forward="true" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jdm/src/components/category/content/DefaultPage.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/vuetest01/demo5/static/aui" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/vuetest01/test05/src/components/phones.vue" />
+        <option value="$PROJECT_DIR$/vuetest01/test05/src/App.vue" />
+        <option value="$PROJECT_DIR$/vuetest01/demo5/src/components/content.vue" />
+        <option value="$PROJECT_DIR$/vuetest01/test04/src/components/hdNav.vue" />
+        <option value="$PROJECT_DIR$/vuetest01/test04/src/components/ftNav.vue" />
+        <option value="$PROJECT_DIR$/vuetest01/test04/src/components/index.vue" />
+        <option value="$PROJECT_DIR$/vuetest01/test04/src/App.vue" />
+        <option value="$PROJECT_DIR$/vuetest01/test05/src/router/index.js" />
+        <option value="$PROJECT_DIR$/vuetest01/test03/8-扩展事件实例.html" />
+        <option value="$PROJECT_DIR$/vuetest01/test03/9-lifeCycle.html" />
+        <option value="$PROJECT_DIR$/vuetest01/test03/3-watch.html" />
+        <option value="$PROJECT_DIR$/vuetest01/test03/4-propsData.html" />
+        <option value="$PROJECT_DIR$/vuetest01/test03/5-computed.html" />
+        <option value="$PROJECT_DIR$/vuetest01/test03/6-methods.html" />
+        <option value="$PROJECT_DIR$/vuetest01/test03/7-solt.html" />
+        <option value="$PROJECT_DIR$/vuetest01/test05/src/components/newsDefault.vue" />
+        <option value="$PROJECT_DIR$/vuetest01/demo7/src/App.vue" />
+        <option value="$PROJECT_DIR$/jdm/config/index.js" />
+        <option value="$PROJECT_DIR$/jdm/src/components/HelloWorld.vue" />
+        <option value="$PROJECT_DIR$/jdm/src/components/hd.vue" />
+        <option value="$PROJECT_DIR$/jdm/src/components/ft.vue" />
+        <option value="$PROJECT_DIR$/jdm/src/components/common/FtNav.vue" />
+        <option value="$PROJECT_DIR$/jdm/static/public.css" />
+        <option value="$PROJECT_DIR$/jdm/src/components/common/classify.vue" />
+        <option value="$PROJECT_DIR$/jdm/src/components/common/HdNav.vue" />
+        <option value="$PROJECT_DIR$/jdm/package.json" />
+        <option value="$PROJECT_DIR$/jdm/src/components/banner/Banner.vue" />
+        <option value="$PROJECT_DIR$/jdm/src/components/common/headNav.vue" />
+        <option value="$PROJECT_DIR$/jdm/src/components/index.vue" />
+        <option value="$PROJECT_DIR$/vuetest01/test04/src/router/index.js" />
+        <option value="$PROJECT_DIR$/jdm/src/components/shopCart/ShopCart.vue" />
+        <option value="$PROJECT_DIR$/jdm/index.html" />
+        <option value="$PROJECT_DIR$/jdm/src/components/my/My.vue" />
+        <option value="$PROJECT_DIR$/jdm/src/components/find/Find.vue" />
+        <option value="$PROJECT_DIR$/jdm/src/components/classify/classifies/Hot.vue" />
+        <option value="$PROJECT_DIR$/jdm/src/components/classify/content/Hot.vue" />
+        <option value="$PROJECT_DIR$/jdm/src/components/classify/content/classifyPage.vue" />
+        <option value="$PROJECT_DIR$/jdm/src/App.vue" />
+        <option value="$PROJECT_DIR$/jdm/src/components/classify/Classify.vue" />
+        <option value="$PROJECT_DIR$/jdm/src/components/classify/content/ClassifyPage.vue" />
+        <option value="$PROJECT_DIR$/jdm/src/components/category/content/cateId-1.vue" />
+        <option value="$PROJECT_DIR$/jdm/src/components/category/content/cateId_2.vue" />
+        <option value="$PROJECT_DIR$/jdm/src/components/category/content/4.vue" />
+        <option value="$PROJECT_DIR$/jdm/src/components/category/content/1.vue" />
+        <option value="$PROJECT_DIR$/jdm/src/components/category/content/cateId_4.vue" />
+        <option value="$PROJECT_DIR$/jdm/src/main.js" />
+        <option value="$PROJECT_DIR$/jdm/src/components/category/content/DefaultPage.vue" />
+        <option value="$PROJECT_DIR$/jdm/src/components/common/HeadNav.vue" />
+        <option value="$PROJECT_DIR$/jdm/src/components/category/Category.vue" />
+        <option value="$PROJECT_DIR$/jdm/src/router/index.js" />
+        <option value="$PROJECT_DIR$/jdm/src/components/category/content/cateId_1.vue" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1040" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="vueProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vueProject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vueProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vueProject" type="462c0819:PsiDirectoryNode" />
+              <item name="jdm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vueProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vueProject" type="462c0819:PsiDirectoryNode" />
+              <item name="jdm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vueProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vueProject" type="462c0819:PsiDirectoryNode" />
+              <item name="jdm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vueProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vueProject" type="462c0819:PsiDirectoryNode" />
+              <item name="jdm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="banner" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vueProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vueProject" type="462c0819:PsiDirectoryNode" />
+              <item name="jdm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="category" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vueProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vueProject" type="462c0819:PsiDirectoryNode" />
+              <item name="jdm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="category" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vueProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vueProject" type="462c0819:PsiDirectoryNode" />
+              <item name="jdm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vueProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vueProject" type="462c0819:PsiDirectoryNode" />
+              <item name="jdm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="find" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vueProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vueProject" type="462c0819:PsiDirectoryNode" />
+              <item name="jdm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="my" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vueProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vueProject" type="462c0819:PsiDirectoryNode" />
+              <item name="jdm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="shopCart" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vueProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vueProject" type="462c0819:PsiDirectoryNode" />
+              <item name="jdm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="router" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vueProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vueProject" type="462c0819:PsiDirectoryNode" />
+              <item name="jdm" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vueProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vueProject" type="462c0819:PsiDirectoryNode" />
+              <item name="jdm" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vueProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vueProject" type="462c0819:PsiDirectoryNode" />
+              <item name="vuetest01" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vueProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vueProject" type="462c0819:PsiDirectoryNode" />
+              <item name="vuetest01" type="462c0819:PsiDirectoryNode" />
+              <item name="demo7" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vueProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vueProject" type="462c0819:PsiDirectoryNode" />
+              <item name="vuetest01" type="462c0819:PsiDirectoryNode" />
+              <item name="demo7" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vueProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vueProject" type="462c0819:PsiDirectoryNode" />
+              <item name="vuetest01" type="462c0819:PsiDirectoryNode" />
+              <item name="demo7" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vueProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vueProject" type="462c0819:PsiDirectoryNode" />
+              <item name="vuetest01" type="462c0819:PsiDirectoryNode" />
+              <item name="demo7" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="banner" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vueProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vueProject" type="462c0819:PsiDirectoryNode" />
+              <item name="vuetest01" type="462c0819:PsiDirectoryNode" />
+              <item name="demo7" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vueProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vueProject" type="462c0819:PsiDirectoryNode" />
+              <item name="vuetest01" type="462c0819:PsiDirectoryNode" />
+              <item name="demo7" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="router" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vueProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vueProject" type="462c0819:PsiDirectoryNode" />
+              <item name="vuetest01" type="462c0819:PsiDirectoryNode" />
+              <item name="test04" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vueProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vueProject" type="462c0819:PsiDirectoryNode" />
+              <item name="vuetest01" type="462c0819:PsiDirectoryNode" />
+              <item name="test04" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vueProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vueProject" type="462c0819:PsiDirectoryNode" />
+              <item name="vuetest01" type="462c0819:PsiDirectoryNode" />
+              <item name="test04" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="router" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vueProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vueProject" type="462c0819:PsiDirectoryNode" />
+              <item name="vuetest01" type="462c0819:PsiDirectoryNode" />
+              <item name="test04" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vueProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vueProject" type="462c0819:PsiDirectoryNode" />
+              <item name="vuetest01" type="462c0819:PsiDirectoryNode" />
+              <item name="test05" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vueProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vueProject" type="462c0819:PsiDirectoryNode" />
+              <item name="vuetest01" type="462c0819:PsiDirectoryNode" />
+              <item name="test05" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vueProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vueProject" type="462c0819:PsiDirectoryNode" />
+              <item name="vuetest01" type="462c0819:PsiDirectoryNode" />
+              <item name="test05" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vueProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vueProject" type="462c0819:PsiDirectoryNode" />
+              <item name="vuetest01" type="462c0819:PsiDirectoryNode" />
+              <item name="test05" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="router" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.HTML" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Study\vueProject\jdm\static\images" />
+      <recent name="D:\Study\vueProject\jdm\src\components\common" />
+      <recent name="D:\Study\vueProject\jdm\static\images\block" />
+      <recent name="D:\Study\vueProject\jdm\static\images\content2" />
+      <recent name="D:\Study\vueProject\jdm\static\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Study\vueProject\jdm\src\components\classify" />
+      <recent name="D:\Study\vueProject\jdm\src\components" />
+      <recent name="D:\Study\vueProject\jdm\static\js" />
+      <recent name="D:\Study\vueProject\jdm\src\components\common" />
+      <recent name="D:\Study\vueProject\vuetest01" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="65febc95-cd99-4048-a032-6862e341b863" name="Default Changelist" comment="" />
+      <created>1548988457304</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1548988457304</updated>
+      <workItem from="1548988461304" duration="16392000" />
+      <workItem from="1549192475103" duration="21035000" />
+      <workItem from="1549373077856" duration="14113000" />
+      <workItem from="1549449168297" duration="8448000" />
+      <workItem from="1549463329585" duration="160000" />
+      <workItem from="1549464801627" duration="2357000" />
+      <workItem from="1549529389351" duration="8210000" />
+      <workItem from="1549636999559" duration="20546000" />
+      <workItem from="1549717368739" duration="7703000" />
+      <workItem from="1549728060134" duration="4379000" />
+      <workItem from="1549733215874" duration="20208000" />
+      <workItem from="1549854702800" duration="29226000" />
+      <workItem from="1549907895239" duration="5263000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="158040000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20495258" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49947312" weight="0.329718" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.6032666" weight="0.329718" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.3967334" side_tool="true" weight="0.329718" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/jdm/static/js/swiper.min.js" />
+    <entry file="file://$PROJECT_DIR$/vuetest01/demo7/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1221">
+          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vuetest01/demo6-Uitest/src/components/HelloWorld.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="504" column="38" lean-forward="true" selection-start-line="504" selection-start-column="38" selection-end-line="504" selection-end-column="38" />
+          <folding>
+            <element signature="e#20594#20624#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vuetest01/demo6-Uitest/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdm/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vuetest01/demo5/src/components/content.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2725">
+          <caret line="109" column="27" selection-start-line="109" selection-start-column="27" selection-end-line="109" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdm/static/images/body-3/8.gif" />
+    <entry file="file://$PROJECT_DIR$/jdm/static/images/body-2/2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdm/static/images/body-1/1.jpg" />
+    <entry file="file://$PROJECT_DIR$/jdm/static/images/body-2/1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdm/static/images/body-3/4.jpg" />
+    <entry file="file://$PROJECT_DIR$/jdm/static/images/body-3/6.jpg" />
+    <entry file="file://$PROJECT_DIR$/jdm/static/images/body-3/3.jpg" />
+    <entry file="file://$PROJECT_DIR$/jdm/static/images/body-3/2.png" />
+    <entry file="file://$PROJECT_DIR$/jdm/static/images/body-3/1.png" />
+    <entry file="file://$PROJECT_DIR$/jdm/static/images/body-3/5.jpg" />
+    <entry file="file://$PROJECT_DIR$/jdm/static/images/body-3/7.jpg" />
+    <entry file="file://$PROJECT_DIR$/jdm/static/images/body-2/3.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdm/static/images/index/1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdm/static/images/block/2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdm/static/images/block/1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vuetest01/demo7/src/components/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="78" column="18" lean-forward="true" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vuetest01/demo7/src/components/news/newsdetails.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vuetest01/demo7/src/components/news/newslist.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdm/src/assets/logo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdm/src/components/common/HdNav.vue" />
+    <entry file="file://$PROJECT_DIR$/vuetest01/test05/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="37" column="24" lean-forward="true" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vuetest01/test04/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="31" column="27" lean-forward="true" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vuetest01/demo7/src/components/banner/bannardetails.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vuetest01/demo7/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#140#161#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vuetest01/demo7/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#1108#1134#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vuetest01/demo7/src/components/common/weather.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="846">
+          <caret line="147" column="21" selection-start-line="147" selection-start-column="20" selection-end-line="147" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdm/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="77" selection-start-line="8" selection-start-column="77" selection-end-line="8" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdm/src/components/shopCart/ShopCart.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vuetest01/demo7/src/components/common/headNav.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="43" column="4" lean-forward="true" selection-start-line="43" selection-start-column="4" selection-end-line="60" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdm/src/components/find/Find.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdm/src/components/my/My.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdm/src/components/banner/Banner.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdm/src/components/classify/content/ClassifyPage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdm/src/components/classify/Classify.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdm/src/components/category/content/ClassifyPage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdm/static/images/1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdm/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#140#161#0" expanded="true" />
+            <element signature="e#273#300#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdm/src/components/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2975">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdm/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-950">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdm/src/components/common/HeadNav.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="26" column="14" lean-forward="true" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdm/src/components/category/content/cateId_4.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdm/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="53" column="30" lean-forward="true" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdm/src/components/category/content/DefaultPage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdm/src/components/category/Category.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdm/src/components/category/content/cateId_1.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="64" column="18" lean-forward="true" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

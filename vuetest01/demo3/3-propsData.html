@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TZ-追梦</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+    </style>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <!--
+        Vue.extend 就是用来生成组件
+        学vue，就是在不停地使用组件
+    -->
+    <abc></abc>
+
+    <div id="box">
+
+    </div>
+    <script>
+        let extend = Vue.extend({
+            template:`<h2><a :href="url">{{con}} - {{num}}</a></h2>`,
+            data(){
+                return {
+                    con:'extend',
+                    url:'http://baidu.com'
+                }
+            },
+            props:['num']
+        });
+        new extend({propsData:{num:123}}).$mount('abc'); // 挂载
+        new extend({propsData:{num:123}}).$mount('#box');
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TZ-追梦</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+        .red{
+            background-color: red;
+        }
+        .blue{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <!--把数据插入到app作用域下，需要 用 插值符号 {{ 变量 }}  ${变量}-->
+        <h2 v-text="msg"></h2>
+        <hr>
+        <h2 v-bind:class="r"> 返回 r 的值 </h2>
+        <h2 :class="{blue:isBlue}"> 接收判断条件 </h2>
+
+        <h2 :class="{r,red}"> { r:r,red:red } 绑定对象 </h2>
+        <h2 :class="[r,b]"> 绑定数组 </h2>
+
+        <h2 :class="isTrue?'red':'blue'"> 三元 </h2>
+        <h2 :style="styleObj"> 绑定对象 </h2>
+        <h2 :style="{color:color,border:border}"> 绑定对象 </h2>
+    </div>
+
+    <script src="../js/vue.js"></script>
+    <script>
+
+        new Vue({
+            el:'#app',
+            data:{
+                msg:'v-bind',
+                num:0,
+                r:'red',
+                isBlue:true,
+                b:'blue',
+                red:true,
+                isTrue:true,
+                styleObj:{
+                    color:'red',
+                    border:'1px solid green'
+                },
+                color:'red',
+                border:'1px solid green'
+
+            }
+        });
+    </script>
+</body>
+</html>,

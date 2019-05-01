@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TZ-追梦</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+    </style>
+    <script src="../js/vue.js"></script>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+
+    <div id="app">
+        <button @click="getData">结合jq</button>
+    </div>
+    <script>
+        Vue.prototype.$ = $;
+        new Vue({
+            el:'#app',
+            methods:{
+                getData(){
+                    console.log( this.$ )
+                    this.$.get(
+                        'http://47.96.29.109:6333/users',
+                            function (data) {
+                            console.log(JSON.parse(data))
+                        }
+                    )
+                }
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>7-solt</title>
+</head>
+<body>
+
+    <div id="app">
+        <hi-dream>
+            <span slot="name">{{ con.name }}</span>
+            <span slot="age">{{ con.age }}</span>
+            <span slot="job">{{ con.job }}</span>
+        </hi-dream>
+    </div>
+
+    <template id="tpl">
+        <div>
+            <p>我是:
+                <slot name="name"></slot>
+            </p>
+            <p>年龄:
+                <slot name="age"></slot>
+            </p>
+            <p>job:
+                <slot name="job"></slot>
+            </p>
+        </div>
+    </template>
+
+    <script src="../js/vue.js"></script>
+    <script>
+
+        // 创建vue实例
+        new Vue({
+            el: '#app',
+            data: {
+                con: {
+                    name: '追梦',
+                    age: 18,
+                    job: '讲师'
+                }
+            },
+            components: {
+                'hi-dream': {
+                    template: '#tpl'
+                }
+            }
+        })
+    </script>
+
+</body>
+</html>

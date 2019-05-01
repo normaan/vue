@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TZ-追梦</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <!--把数据插入到app作用域下，需要 用 插值符号 {{ 变量 }}  ${变量}-->
+        {{ abc123 }}
+        <h2 v-text="vText"></h2>
+        <h2 v-text="vText2"></h2>
+        <h2 v-html="vHtml"></h2>
+        <hr>
+        <h2 v-show="isShow">{{vHtml}}  display:none/block 切换</h2>
+
+    </div>
+
+    <script src="../js/vue.js"></script>
+    <script>
+        // MVVM
+        new Vue({
+            el:'#app',
+            data:{  // 我们请求过来的原始数据 都会放到 data，
+                abc123:'helloWorld',
+                vText: '这是v-text,相当于 innerText',
+                vText2: '<em>这是v-text</em>,<i>相当于 innerText</i>',
+                vHtml: '<em>这是v-text</em>,<i>相当于 innerText</i>',
+                isShow:false
+            }
+        });
+    </script>
+</body>
+</html>

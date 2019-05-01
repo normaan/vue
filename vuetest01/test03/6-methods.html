@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>6-methods</title>
+</head>
+<body>
+
+    <div id="app">
+        <p>{{price}}</p>
+        <input type="button" value="在Vue作用域下调用add函数" @click="add(5,$event)"> <br>
+        <input type="button" value="this指向" @click="This">
+        <dream @click.native="add" title="在组件中调用方法"></dream>
+    </div>
+    <button onclick="vm.add(5,this)">在外部调用vue的里的方法</button>
+
+    <script src="../js/vue.js"></script>
+    <script>
+        let dream = {
+            template: '<h2><button>{{ title }}</button></h2>',
+            props: ['title']
+        }
+
+        // 创建vue实例
+        let vm = new Vue({
+            el: '#app',
+            data: {
+                price: 199
+            },
+            components: {
+                dream
+            },
+            methods: {
+                add(n, e) {
+                    console.log(n, e)
+                },
+                This: ()=> {
+                    console.log(this)
+                }
+            }
+        })
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TZ-追梦</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+    </style>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+
+    <div id="app">
+        <h1>{{msg}} - {{price}}</h1>
+        <ol>
+            <li v-for="(item,index) in list" :key="index">
+                {{ item.date }} - {{item.title}}
+            </li>
+        </ol>
+
+        <ol>
+            <li v-for="(item,index) in newsList" :key="index">
+                {{ item.date }} - {{item.title}}
+            </li>
+        </ol>
+        {{newPrice}}
+    </div>
+
+<script>
+    new Vue({
+        el:'#app',
+        data:{
+            price:199,
+            msg:'computed 主要作用是对原始数据 进行二次处理，例如。 类型大小写转换，排序，拼接',
+            list:[
+                {
+                    title:'中国在世贸组织起诉美国301征税措施',
+                    date:'2018-07-06'
+                },
+                {
+                    title:'贸易战正式打响，中国这样强势反击！三点深刻启示',
+                    date:'2018-07-07'
+                },
+                {
+                    title:'中国对美关税反制措施已于6日12:01正式实施',
+                    date:'2018-07-08'
+                }
+            ]
+        },
+        computed:{
+            newsList(){
+                return this.list.reverse();
+            },
+            newPrice(){
+                return ('￥'+this.price+'元');
+            }
+        }
+    })
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
