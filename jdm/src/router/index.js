@@ -6,6 +6,7 @@ import Find from '../components/find/Find'
 import ShopCart from '../components/shopCart/ShopCart'
 import My from '../components/my/My'
 import Banner from '../components/banner/Banner'
+import Login from '../components/login/Login'
 
 // 分类详情页面
 import cateId_1 from '../components/category/content/cateId_1'
@@ -86,6 +87,11 @@ export default new Router({
             path: '/banner',
             name: 'banner',
             component: Banner
+        },
+        {
+            path: '/login',
+            name: 'login',
+            component: Login
         },
 
     ]

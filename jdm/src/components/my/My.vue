@@ -1,7 +1,10 @@
 <template>
-    <div>
+    <div class="my">
         <!--公共标题-->
         <head-nav title="我的京东"></head-nav>
+        <div class="content">
+
+        </div>
     </div>
 </template>
 
@@ -11,6 +14,15 @@
     }
 </script>
 
-<style scoped>
+<style scoped lang="less">
+    @rem: 64rem;
 
+    .my {
+        width: 100%;
+
+        .content {
+
+        }
+
+    }
 </style>

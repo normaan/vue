@@ -8,7 +8,7 @@
                 <i class="iconfont icon-sousuo"></i>
                 <input type="text" name="text" placeholder="PLUS DAY会员狂欢，抽专属神券199减149！">
             </form>
-            <button><a href="#">登录</a></button>
+            <router-link class="login" :to="{name: 'login'}">登录</router-link>
         </header>
 
 
@@ -205,7 +205,7 @@
         methods: {
 
         },
-        // 钩子函数
+        // 钩子函数-前
         created() {
 
             // 获取图片地址
@@ -235,6 +235,7 @@
                     console.log(err)
                 })
         },
+        // 钩子函数-后
         mounted() {
 
         }
@@ -294,18 +295,19 @@
                 font-size: 16px;
             }
 
-            button {
-                flex: none;
-                margin-left: 10/@rem;
+            // 首页登录按钮
+            .login {
+                //flex: none;
+                //margin-left: 10/@rem;
+                margin: 0 10/@rem 0 20/@rem;
                 background: transparent;
-                border: none;
-                outline: none;
+                //border: none;
+                //outline: none;
                 cursor: pointer;
-                font-size: 14px;
-            }
-
-            button a {
-                color: #fff;
+                line-height: 39px;
+                font-size: 16px;
+                font-weight: bold;
+                color: white;
             }
         }
 
